@@ -1,4 +1,4 @@
-package com.frc5113.library.logging.shuffleboard;
+package com.frc5113.logging.shuffleboard;
 
 import java.util.Map;
 

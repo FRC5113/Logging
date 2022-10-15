@@ -1,7 +1,7 @@
-package com.frc5113.library.logging;
+package com.frc5113.logging;
 
 import com.frc5113.library.primative.BaseLoggerFlags;
-import com.frc5113.library.logging.BaseLogger.Level;
+import com.frc5113.logging.BaseLogger.Level;
 
 public class DataLogger {
     public static void printLow(BaseLoggerFlags tag, String msg) {

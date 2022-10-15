@@ -8,6 +8,26 @@ targetCompatibility = JavaVersion.VERSION_11
 
 def ROBOT_MAIN_CLASS = "frc.robot.Main"
 
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven {
+        url 'https://frcmaven.wpi.edu/artifactory/release'
+    }
+
+    maven {
+        url 'https://maven.revrobotics.com'
+    }
+
+    maven {
+        url 'https://maven.ctr-electronics.com/release'
+    }
+
+    maven {
+        url 'https://repo1.maven.org/maven2'
+    }
+}
+
 // Define my targets (RoboRIO) and artifacts (deployable files)
 // This is added by GradleRIO's backing project DeployUtils.
 deploy {
@@ -66,6 +86,8 @@ dependencies {
     simulationRelease wpi.sim.enableRelease()
 
     testImplementation 'junit:junit:4.12'
+
+    implementation 'com.github.FRC5113:Library:27532c2'
 }
 
 // Simulation configuration (e.g. environment variables).

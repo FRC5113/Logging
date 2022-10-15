@@ -1,4 +1,4 @@
-package com.frc5113.library.logging;
+package com.frc5113.logging;
 
 import java.util.ArrayList;
 
